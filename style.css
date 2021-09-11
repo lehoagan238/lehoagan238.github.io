@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none !important;
+    font-family: 'Poppins', sans-serif ;
 }
 .max-width{
     max-width: 1300px;
@@ -99,14 +104,19 @@
 
 /* Skill Begin */
 #skill{
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     color: #555;
 }
+#skill .container {
+    padding: 50px;
+}
+
+
 #skill h1 {
     text-align: center;
     color: #555;
-    padding-bottom: 10px;
+    padding-bottom: 75px;
 }
 #skill h1::after{
     content: '';
@@ -127,6 +137,7 @@
 #skill .skill-bar .progress{
     border-radius: 16px !important;
     margin-bottom: 20px;
+    
 }
 
 /* Skill End */
@@ -141,8 +152,11 @@
     background-position: center;
     color: #efefef;
     background-attachment: fixed;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
+}
+#groupDiary .container {
+    padding-bottom: 110px;
 }
 #groupDiary h1{
     text-align: center;
@@ -157,6 +171,12 @@
     width: 170px;
     margin: 20px auto 5px ;
 }
+#groupDiary .nav-tabs {
+    margin-top: 84px;
+}
+#groupDiary .nav-link:hover {
+    color: crimson;
+}
     /* Group Diary End */
 
 /* About Begin */
@@ -165,6 +185,7 @@ ul.social-network {
     display: inline;
     margin-left: 0 !important;
     padding: 0;
+    
 }
 
 ul.social-network li {
@@ -180,8 +201,8 @@ ul.social-network li {
     background-color: #33ccff;
 }
 
-.social-network a.icoJoomla:hover {
-    background-color: #BD3518;
+.social-network a.icoInstagram:hover {
+    background-color: pink;
 }
 
 .social-network a.icoVimeo:hover {
@@ -237,7 +258,7 @@ a.socialIcon:hover,
     -ms-transition: all 0.2s;
     transition: all 0.2s;
 }
-/*  */
+
 
 #team{
     background-color: #333;
@@ -259,6 +280,9 @@ a.socialIcon:hover,
     margin: 20px auto 5px ;
     margin-bottom: 100px;
 }
+#team .container {
+    padding-bottom: 100px;
+}
 /* About End */
 
 #result{
@@ -269,6 +293,7 @@ a.socialIcon:hover,
 #result h1 {
     text-align: center;
     color: #555;
+    padding-top: 40px;
     padding-bottom: 10px;
 }
 #result h1::after{
@@ -348,9 +373,13 @@ a.socialIcon:hover,
    #footer .social-icon{
     font-size: 25px;
     margin: 0px 15px;
+    justify-content: space-between;
 }
 #footer h6 , #footer p , #footer a{
     color: #fff;   
+}
+#footer h6{
+    color: crimson;
 }
 #footer a:hover ,#footer p:hover {
     color: crimson;
@@ -373,11 +402,11 @@ a.socialIcon:hover,
 }
 
 #footer .social-icon .fa-instagram:hover {
-    color: #3f729b;
+    color:pink;
 }
 
 #footer .social-icon .fa-github:hover {
-    color: #00405d
+    color: #3B5998;
 }
     /* Footer End */
 
