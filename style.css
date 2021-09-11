@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #000;
+    
+}
+
+
+.navbar-nav li a{
+    padding: 0 10px;
+    float: right;
+    text-align: left;
+
+}
+#nav-bar ul li a:hover {
+    color: red;
+
+}
+
+.navbar-toggler{
+    border: none;
+}
+.nav-link{
+    color: #fff ;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px 15px;
+
+}
+
+/* Home Begin */
+.home{
+    display: flex;
+    background: url("img/slider/Ảnh\ 1.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+/* Home End */
+
+
+
+/* Skill Begin */
+#skill{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#skill h1 {
+    text-align: center;
+    color: #555;
+    padding-bottom: 10px;
+}
+#skill h1::after{
+    content: '';
+    background-color: #555;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px ;
+}
+#skill .skill-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+
+}
+#skill .skill-bar .progress-bar {
+    border-radius: 16px;
+}
+#skill .skill-bar .progress{
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+
+/* Skill End */
+
+
+
+
+    /* Group Diary Begin */
+#groupDiary{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url();
+    background-size: cover;
+    background-position: center;
+    color: #efefef;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#groupDiary h1{
+    text-align: center;
+    color: #efefef;
+    padding-bottom: 10px;
+}
+#groupDiary h1::after{
+    content: '';
+    background-color: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px ;
+}
+    /* Group Diary End */
+
+/* About Begin */
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoJoomla:hover {
+    background-color: #BD3518;
+}
+
+.social-network a.icoVimeo:hover {
+    background-color: #0590B8;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+/*  */
+
+#team{
+    background-color: #333;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#team h1 {
+    text-align: center;
+    color: #efefef;
+    padding-bottom: 10px;
+}
+#team h1::after{
+    content: '';
+    background-color: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px ;
+    margin-bottom: 100px;
+}
+/* About End */
+
+#result{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#result h1 {
+    text-align: center;
+    color: #555;
+    padding-bottom: 10px;
+}
+#result h1::after{
+    content: '';
+    background-color: #555;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px ;
+    margin-bottom: 40px;
+}
+.card-content > ul > li {
+    margin-left: 20px;
+}
+.card-img-top {
+    height: 255px;
+    width: 255px;
+}
+
+.card{
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.card:hover {
+    box-shadow: 5px 6px 6px 2px #333;
+    transform: scale(1.1)
+}
+#result .row{
+    justify-content: space-around;
+}
+.social-icon{
+    font-size: 25px;
+    margin: 0px 16px;
+}
+
+.user-pic {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 20px auto 20px;
+    border-left: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+    border-top: 3px solid #007bff;
+    border-bottom: 3px solid #007bff;
+    transform: rotate(-30deg);
+    transition: 0.5s;
+    
+}
+
+.card-box:hover .user-pic {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+}
+.card-box {
+    max-width: 500px;
+    padding: 15px;
+    background-color: #fdfdfd;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 8px 0px #d4d4d4;
+    transition: 0.5s;
+}
+
+.card-box ul li {
+    margin-left: 120px ;
+}
+.card-box:hover {
+	border: 1px solid #007bff;
+}
+.card-box p {
+    color: #808080;
+}
+   /* Footer Begin */
+   #footer .social-icon{
+    font-size: 25px;
+    margin: 0px 15px;
+}
+#footer h6 , #footer p , #footer a{
+    color: #fff;   
+}
+#footer a:hover ,#footer p:hover {
+    color: crimson;
+
+}
+#footer .social-icon:hover {
+    color: #007bb7;
+}
+
+#footer .social-icon .fa-facebook-f:hover {
+    color: #3B5998;
+}
+
+#footer .social-icon .fa-twitter:hover {
+    color: #33ccff;
+}
+
+#footer .social-icon .fa-google:hover{
+    color: #BD3518;
+}
+
+#footer .social-icon .fa-instagram:hover {
+    color: #3f729b;
+}
+
+#footer .social-icon .fa-github:hover {
+    color: #00405d
+}
+    /* Footer End */
+
+

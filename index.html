@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web phân công công việc nhóm</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- CND fontawesome -->
+  <script src="https://kit.fontawesome.com/d61224b70c.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Nav Bar Begin -->
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg  ">
+      <a class="navbar-brand " href="#" style="margin-left: 160px;"><a href="#"
+          style="color: #fff;font-size: 35px;font-weight: 600;;">HCI <span
+            style=" color: crimson;transition: all 0.3s ease;">2021</span></a></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ml-lg-auto ">
+          <li class="nav-item active">
+            <a class="nav-link " href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#groupDiary">Group Diary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#result">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " style="margin-right: 200px;"
+              href="https://khiemvjppro.github.io/BaoCaoProjectEBankingGTNM">Project</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!-- Nav Bar End -->
+  <!-- Slider Begin -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-2">HUMAN COMPUTER INTERACTION INTERACTION</div>
+        <div class="text-3">LECTURE: VÕ TẤN TOÀN </span></div>
+        <a href="https://khiemvjppro.github.io/BaoCaoProjectEBankingGTNM/">Go To Project</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <!-- Team Member -->
+  <!-- <section id="team">
+        <div class="container">
+            <h1>About US</h1>
+            <div class="row">
+                <div class="col-md-6 profile-pic text-center">
+                    <div class="img-box">
+                        <img src="img/member/profile-1.jpeg"alt="">
+                        <ul>
+                            <a href="#"><li><i class="fab fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fab fa-twitter"></i></i></li></a>
+                            <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                            
+                        </ul>
+                    </div>
+                    <h2>Lê Hoàng Ân</h2>
+                    <h3>Developer</h3>
+                    <p><strong>Student Code:</strong> 19130004</p>
+                    <p><strong>Class:</strong> DH19DTA</p>
+                  </div>
+
+                <div class="col-md-6 profile-pic text-center">
+                    <div class="img-box">
+                        <img src="img/member/profile-2.jpeg" alt="">
+                        <ul>
+                            <a href="#"><li><i class="fab fa-facebook"></i></li></a>
+                            <a href="#"><li><i class="fab fa-twitter"></i></i></li></a>
+                            <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                            
+                        </ul>
+                    </div>
+                    <h2>Lê Trọng Khiêm</h2>
+                    <h3>Developer</h3>
+                    <p><strong>Student Code:</strong> 19130102</p>
+                    <p><strong>Class:</strong> DH19DTC</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+  <!-- About Begin -->
+
+  <section id="team">
+    <div class="py-5 ">
+      <div class="container">
+        <h1>About US</h1>
+
+        <div class="row">
+          <!-- column  -->
+          <div class="col-lg-6">
+            <div class="card shadow border-0 mb-4">
+              <!-- Row -->
+              <div class="row no-gutters">
+                <div class="col-md-5 pro-pic" style="background:url(img/member/bandmember.jpg) center center no-repeat">
+                  <div class="card-img-overlay">
+                    <ul class="list-inline position-relative text-center">
+                      <li class="list-inline-item"><a href="#" class="text-decoration-none d-block text-white px-1"><i
+                            class="icon-social-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#" class="text-decoration-none d-block text-white px-1"><i
+                            class="icon-social-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#" class="text-decoration-none d-block text-white px-1"><i
+                            class="icon-social-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="#" class="text-decoration-none d-block text-white px-1"><i
+                            class="icon-social-behance"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-7 bg-white">
+                  <div class="p-4">
+                    <h6 class="mb-3">Lê Hoàng Ân</h6>
+                    <p>Developer</p>
+                    <p>MSSV: 19130004</p>
+                    <p>Class: DH19DTA</p>
+
+                    <div class="col-md-12 text-center">
+                      <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoJoomla" title="Joomla"><i class="fa fa-joomla"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Row -->
+            </div>
+          </div> <!-- column  -->
+          <div class="col-lg-6">
+            <div class="card shadow border-0 mb-4">
+              <!-- Row -->
+              <div class="row no-gutters card-shadow">
+                <div class="col-md-5 pro-pic" style="background:url(img/member/bandmember.jpg) center center no-repeat">
+                  <div class="card-img-overlay">
+                    <ul class="list-inline position-relative text-center">
+                      <li class="list-inline-item"><a href="#" class="text-decoration-none d-block text-white px-1"><i
+                            class="icon-social-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#" class="text-decoration-none d-block text-white px-1"><i
+                            class="icon-social-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#" class="text-decoration-none d-block text-white px-1"><i
+                            class="icon-social-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="#" class="text-decoration-none d-block text-white px-1"><i
+                            class="icon-social-behance"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-7 bg-white">
+                  <div class="p-4">
+                    <h6 class="mb-3">Lê Trọng Khiêm</h6>
+                    <p>Developer</p>
+                    <p>MSSV: 19130102</p>
+                    <p>Class: DH19DTC</p>
+
+                    <div class="col-md-12 text-center">
+                      <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoJoomla" title="Joomla"><i class="fa fa-joomla"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Row -->
+            </div>
+          </div> <!-- column  -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About End -->
+
+
+
+
+
+  <!-- Skill Begin -->
+
+  <section id="skill">
+    <div class="container">
+      <h1>Our Skill</h1>
+      <div class="skill-bar">
+        <p class="text">HTML</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%;">60%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 50%;">50%</div>
+        </div>
+
+        <p>JAVASCRIPT</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 80%;">80%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skill End -->
+
+  <!-- Group Diary Begin -->
+
+  <section id="groupDiary">
+    <div class="container">
+      <h1>Group Diary</h1>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="Week1-tab" data-toggle="tab" href="#week 1" role="tab" aria-controls="home"
+            aria-selected="true">Week 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Week2-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+            aria-selected="true">Week 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="week3-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            aria-selected="true">Week 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="week4-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            aria-selected="true">Week 4</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="Week1-tab">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Mã SV</th>
+                <th scope="col">Họ tên</th>
+                <th scope="col">Công việc</th>
+                <th scope="col">Kết quả</th>
+                <th scope="col">Tiến độ</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="Week1-tab">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Mã SV</th>
+                <th scope="col">Họ tên</th>
+                <th scope="col">Công việc</th>
+                <th scope="col">Kết quả</th>
+                <th scope="col">Tiến độ</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="Week1-tab">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Mã SV</th>
+                <th scope="col">Họ tên</th>
+                <th scope="col">Công việc</th>
+                <th scope="col">Kết quả</th>
+                <th scope="col">Tiến độ</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="Week1-tab">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Mã SV</th>
+                <th scope="col">Họ tên</th>
+                <th scope="col">Công việc</th>
+                <th scope="col">Kết quả</th>
+                <th scope="col">Tiến độ</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>19130004</td>
+                <td>Lê Hoàng Ân</td>
+                <td>Lên ý tưởng cho web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Group Diary Begin -->
+
+
+  <!-- Result Begin -->
+  <section id="result">
+    <div class="container">
+      <h1>Result</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-box">
+            <div class="user-pic">
+              <img src="img/member/bandmember.jpg" class="img-fluid" alt="User Pic">
+            </div>
+            <h4 class="text-center">Lê Hoàng Ân</h4>
+            <h6 class="text-center">Developer</h6>
+            <hr>
+            <h4 class="text-center">Trang web nhóm</h4>
+            <ul>
+              <li>Trang blog</li>
+              <li>Một phần trang detail</li>
+              <li>Chức năng comment</li>
+            </ul>
+            <h4 class="text-center">Trang web project</h4>
+            <ul>
+              <li>Trang blog</li>
+              <li>Một phần trang detail</li>
+              <li>Chức năng comment</li>
+            </ul>
+            <h4 class="text-center">Đánh giá</h4>
+            <ul>
+              <li>Hoàn thành: 100%</li>
+              <li>Đóng góp: 50%</li>
+            </ul>
+            <hr>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-box">
+            <div class="user-pic">
+              <img src="img/member/bandmember.jpg" class="img-fluid" alt="User Pic">
+            </div>
+            <h4 class="text-center">Lê Trọng Khiêm</h4>
+            <h6 class="text-center">Developer</h6>
+            <hr>
+            <h4 class="text-center">Trang web nhóm</h4>
+            <ul>
+              <li>Trang blog</li>
+              <li>Một phần trang detail</li>
+              <li>Chức năng comment</li>
+            </ul>
+            <h4 class="text-center">Trang web project</h4>
+            <ul>
+              <li>Trang blog</li>
+              <li>Một phần trang detail</li>
+              <li>Chức năng comment</li>
+            </ul>
+            <h4 class="text-center">Đánh giá</h4>
+            <ul>
+              <li>Hoàn thành: 100%</li>
+              <li>Đóng góp: 50%</li>
+            </ul>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Result -->
+
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset social-icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Member
+              </h6>
+              <p>
+                <a href="#teamf" class="text-reset">Lê Hoàng Ân</a>
+              </p>
+              <p>
+                <a href="#team" class="text-reset">Lê Trọng Khiêm</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#team" class="text-reset">About</a>
+              </p>
+              <p>
+                <a href="#groupDiary" class="text-reset">Group Diary</a>
+              </p>
+              <p>
+                <a href="#result" class="text-reset">Result</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact
+              </h6>
+              <p><i class="fas fa-home me-3"></i> Thu Duc , Nong Lam University</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="#">HCI 2021</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  <!-- Smooth Scroll JS -->
+  <script src="assets/js/smooth-scroll.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+</body>
+
+</html>
